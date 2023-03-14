@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+/* Same as user management CRUD */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+    </style>
+
+    <script>
+        // Function to add a user
+function addUser() {
+  var username = document.getElementById("username").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+
+  // Make HTTP POST request to backend API to add user
+  // Once the user is added, refresh the user table with updated data
+}
+
+// Function to delete a user
+function deleteUser(userId) {
+  // Make HTTP DELETE request to backend API to delete user by ID
+  // Once the user is deleted, refresh the user table with updated data
+}
+
+// Function to edit a user
+function editUser(userId) {
+  // Make HTTP PUT request to backend API to update user by ID
+  // Once the user is updated, refresh the user table with updated data
+}
+
+// Function to get all users and populate the user table
+function getUsers() {
+  // Make HTTP GET request to backend API to get all users
+  // Once the users are retrieved, populate the user table with the data
+}
+
+// Call the getUsers() function to populate the user table on page load
+getUsers();
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="/" class="post">
+        </form>
+    </div>
+    <form id="user-form">
+        <input type="text" id="username" placeholder="Username">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button type="button" onclick="addUser()">Add User</button>
+      </form>
+      
+      <table id="user-table">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- User data will be populated dynamically here -->
+        </tbody>
+      </table>
+      <form id="book-form">
+        <input type="text" id="book-title" placeholder="Title">
+        <input type="text" id="book-author" placeholder="Author">
+        <input type="number" id="book-quantity" placeholder="Quantity">
+        <button type="button" onclick="addBook()">Add Book</button>
+      </form>
+      
+      <table id="book-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Quantity</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Book data will be populated dynamically here -->
+        </tbody>
+      </table>
+      
+      
+</body>
+</html>
